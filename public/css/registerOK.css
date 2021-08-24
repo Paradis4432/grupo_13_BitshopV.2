@@ -1,0 +1,38 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #311900;
+    justify-content: center;
+    display: flex;
+}
+
+.register-container{
+    background-color: tomato;
+    width: 350px;
+    height: 500px;
+    border: 5px solid black;
+    padding: 50px;
+    margin-top: 10%;
+    justify-content: center;
+}
+
+.regsiterTitle{
+    text-align: center;
+    color: white;
+    font-size: 40px;
+}
+
+.credentials{
+    margin-top: 10%;
+    margin-left: 10%;
+    text-align: center;
+    height:40px;
+}
+
+.enviar{
+    margin-left: 70%;
+    margin-top: 20%;
+    padding: 6px;
+}

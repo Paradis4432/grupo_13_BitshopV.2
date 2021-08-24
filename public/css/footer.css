@@ -1,0 +1,161 @@
+/* Main.CSS */
+
+:root{
+    --theme-color: #ece5ba;
+    --primary-color: #2e1a1a;
+    --secondary-color: #e54f28;
+    --tertiary-color: #9e2304;
+    --text-color: #2e1a1a;
+}
+
+* {
+    box-sizing:border-box;
+    font-family: 'Odibee Sans', cursive;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--theme-color);
+}
+
+a{
+    text-decoration:none;
+}
+
+footer ul li {
+    list-style: none;
+}
+
+/* Footer */
+
+footer {
+    background-image:linear-gradient(#692d2d, var(--tertiary-color));
+    width: 100%;
+    padding: 20px;
+
+    /* Flex */
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+footer ul li {
+    padding-bottom: 7px;
+}
+
+footer ul li:last-child{
+    padding-bottom:0px;
+}
+
+footer ul li a{
+    color: var(--theme-color);
+    text-decoration: none;
+    padding: 3px;
+}
+
+footer .links {
+    display: flex;
+    flex-direction: column;
+    padding-bottom:12px;
+}
+
+footer .menu {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 20px;
+}
+
+footer .menu  {
+    border-bottom: solid 1px;
+    border-bottom-color: #ece5ba;
+    padding-top:12px;
+    list-style: none;
+    border-top: solid 1px;
+    border-top-color: #ece5ba;
+    padding-bottom: 12px; 
+}
+
+footer .social {
+    display: flex;
+    flex-direction: column;
+    padding-top: 12px;
+}
+
+@media (min-width:850px) {
+    footer {
+        
+        width: 100%;
+        padding: 20px;
+    
+        /* Flex */
+        
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    
+    footer ul li {
+        list-style: none;
+        padding-bottom: 12px;
+    }
+    
+    footer ul li a{
+        color: var(--theme-color);
+        text-decoration: none;
+        padding: 7px;
+        text-align:left;
+    }
+    
+    footer .social ul li{
+        border-right:none;
+        padding-right:0px;
+    }
+    
+    footer .links {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    footer .menu {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        border-top: 0px;
+        border-bottom: 0px;
+        border-right: solid 1px;
+        border-right-color: #ece5ba;
+        border-left: solid 1px;
+        border-left-color: #ece5ba;
+        margin-top:12px;
+    }
+    
+    footer .menu ul li {
+        
+        padding-right:250px;
+        list-style: none;
+        
+        padding-left: 250px; 
+        padding-top:0px;
+        padding-bottom:12px;
+        border-bottom: none;
+        border-top: none;
+        border-top-color:none;
+        border-bottom-color: none;
+    }
+    
+    footer .social {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        padding-top: 0px;
+    }
+}
+
