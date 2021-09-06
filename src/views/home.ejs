@@ -2,131 +2,98 @@
 <!DOCTYPE html>
 
 <html lang='en'>
-	
-	<head>
-		<meta charset='UTF-8'>
-		<meta http-equiv='X-UA-Compatible' content='IE=edge'>
-		<meta name='viewport' content='width=device-width, initial-scale=1.0'>
-		<title> <%= title %> </title>
-		<link rel='stylesheet' type ='text/css' href='css/home.css'>
-		<link rel="stylesheet" type ='text/css' href="css/footer.css">
-		<link rel="stylesheet" type ='text/css' href="css/header.css">
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-		<link href="https://fonts.googleapis.com/css2?family=Odibee+Sans&display=swap" rel="stylesheet">
-	</head>
+<head>
+	<meta charset='UTF-8'>
+	<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+	<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+	<title> <%= title %> </title>
+	<link rel='stylesheet' type ='text/css' href='css/home.css'>
+	<link rel="stylesheet" type ='text/css' href="css/footer.css">
+	<link rel="stylesheet" type ='text/css' href="css/header.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-	<body>
-		
-		<div class="contenedor">
+	<link href="https://fonts.googleapis.com/css2?family=Odibee+Sans&display=swap" rel="stylesheet">
+</head>
 
-			<%- include("./partials/header") %>
+<body>
 
-			<!-- <header>
-				// 
-				<div class="valores">
-					<ul>
-						<li class="DO">Dólar Oficial</li>
-						<li class="DB">Dólar Blue</li>
-						<li class="BTC">Bitcoin</li>
-					</ul>
-				</div>
-				// 
-				<div class="logo">
-					<a href="#"><img class="imagen-logo" src="images/Logo png.png" alt=""></a>
-				</div>
+<div class="contenedor">
 
-				<div class="user-menu">
-					<ul>
-						<li class="one">
-							<a href="views/login.ejs" class="iniciar-sesion" target="_blank">
-								<span>Iniciar Sesión</span>
-							</a>
-						</li>
-						<li class="two">
-							<a href="views/register.ejs" class="registrarse" target="_blank">
-								<span>Registrarse</span>
-							</a>
-						</li>
-					</ul>
-					
-				</div>
-
-			</header> -->
-
-		<section class="menu">
-			<div class="i1">
-				<a href="/product"><img src="images/PC Components.png" alt=""></a>
-				<div class="ip">
-					<img src="images/Chip.png" alt="">
-					<h2>Componentes</h2>
-					<!-- <p>Comprá componentes o te mato</p> -->
-				</div>
+	<%- include("./partials/header") %>
+	<section class="menu">
+		<div class="i1">
+			<a href="/product"><img src="images/PC Components.png" alt=""></a>
+			<div class="ip">
+				<img src="images/Chip.png" alt="">
+				<h2>Componentes</h2>
+				<!-- <p>Comprá componentes o te mato</p> -->
 			</div>
-			<div class="i2">
-				<a href="/product/id"><img src="images/PC Keyboard.png" alt=""></a>
-				<div class="ip">
-					<img src="images/Teclado.png" alt="">
-					<h2>Periféricos</h2>
-					<p>Comprá periféricos plox</p>
-				</div>
-			</div>
-			<div class="i3">
-				<a href="/product/cart"><img src="images/Gatok.png" alt=""></a>
-				<div class="ip">
-					<img src="images/Carrito.png" alt="">
-					<h2>Carritok</h2>
-					<p>Mira tu carrito y al gatito haciendo ok</p>
-				</div>
-			</div>
-			<div class="i4">
-				<a href="#"><img src="images/Inés.png" alt=""></a>
-				<div class="ip">
-					<img src="images/PC.png" alt="">
-					<h2>PC Custom</h2>
-					<p>Ponele fritas a tu PC por 25 pesos extra</p>
-				</div>
-			</div>
-		</section>
-
-
-				
-			</aside>
-
-			<%- include("./partials/footer") %>
-
-			<!-- <footer>
-			
-
-				<div class="links">
-					<ul>
-						<li><a href="#">Acerca de Nosotros</a></li>
-						<li><a href="#">Términos de Uso</a></li>
-						<li><a href="#">Políticas de Privacidad</a></li>
-					</ul>
-				</div>
-
-				<div class="menu">
-					<ul>
-						<li><a href="#">Componentes</a></li>
-						<li><a href="#">Periféricos</a></li>
-						<li><a href="#">PC Custom</a></li>
-						<li><a href="#">Carrito</a></li>
-					</ul>
-				</div>
-
-				<div class="social">
-					<ul>
-						<li><a href="#">Facebook</a></li>
-						<li><a href="#">Twitter</a></li>
-						<li><a href="#">Instagram</a></li>
-					</ul>
-				</div>
-			</footer> -->
 		</div>
-		
+		<div class="i2">
+			<a href="/product/id"><img src="images/PC Keyboard.png" alt=""></a>
+			<div class="ip">
+				<img src="images/Teclado.png" alt="">
+				<h2>Periféricos</h2>
+				<p>Comprá periféricos plox</p>
+			</div>
+		</div>
+		<div class="i3">
+			<a href="/product/cart"><img src="images/Gatok.png" alt=""></a>
+			<div class="ip">
+				<img src="images/Carrito.png" alt="">
+				<h2>Carritok</h2>
+				<p>Mira tu carrito y al gatito haciendo ok</p>
+			</div>
+		</div>
+		<div class="i4">
+			<a href="#"><img src="images/Inés.png" alt=""></a>
+			<div class="ip">
+				<img src="images/PC.png" alt="">
+				<h2>PC Custom</h2>
+				<p>Ponele fritas a tu PC por 25 pesos extra</p>
+			</div>
+		</div>
+	</section>
 
-	</body>
+
+
+	</aside>
+
+	<%- include("./partials/footer") %>
+
+	<!-- <footer>
+
+
+        <div class="links">
+            <ul>
+                <li><a href="#">Acerca de Nosotros</a></li>
+                <li><a href="#">Términos de Uso</a></li>
+                <li><a href="#">Políticas de Privacidad</a></li>
+            </ul>
+        </div>
+
+        <div class="menu">
+            <ul>
+                <li><a href="#">Componentes</a></li>
+                <li><a href="#">Periféricos</a></li>
+                <li><a href="#">PC Custom</a></li>
+                <li><a href="#">Carrito</a></li>
+            </ul>
+        </div>
+
+        <div class="social">
+            <ul>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">Instagram</a></li>
+            </ul>
+        </div>
+    </footer> -->
+</div>
+
+
+</body>
 
 </html>

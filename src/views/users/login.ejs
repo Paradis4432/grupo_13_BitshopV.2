@@ -5,12 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <%- include("../partials/head")%>
 
 </head>
 <body>
-<h1>
-    Hi!
-</h1>
+
+<main>
+    <label for="userInput">UserName </label><input type="text" id="userInput">
+    <label for="passInput">Contraseña </label><input type="password" id="passInput">
+
+    <button id="Submit" onclick="checkUser()">Submit</button>
+
+    <p id="info"></p>
+</main>
+
 </body>
 </html>
+
+<script>
+    //use p id="info" to display if pass & user in database
+    function checkUser(){
+        //check if user in sql database
+        //if true redirect to main page add "logged=true" in localstorage
+        //if false send message "usuario o contraseña incorrecta"
+
+    }
+</script>

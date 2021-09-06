@@ -23,7 +23,7 @@ app.use(express.json());
 
 // App Routes
 const home = require("./routes/home");
-app.use(home);
+app.use("/", home);
 
 const product = require("./routes/product");
 app.use("/product", product);    

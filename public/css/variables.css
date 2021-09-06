@@ -1,0 +1,21 @@
+:root{
+    --g-black: #050606;
+    --g-white: #FDFDFD;
+    --g-grey: #D8D7D5;
+    --g-mistyBlue: #ADB3BC;
+
+    /* --actualizar colores con ^ */
+    --g-theme-color: #ece5ba;
+    --g-primary-color: #2e1a1a;
+    --g-secondary-color: #e54f28;
+    --g-tertiary-color: #9e2304;
+    --g-text-color: #2e1a1a;
+
+}
+
+* {
+    margin:0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing:border-box;
+}

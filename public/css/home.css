@@ -139,7 +139,7 @@ footer ul li {
         margin: 250px 0px 100px 0px;
         text-align: center;
     }
-    
+
     .i2 img{
         height:40vw;
         width:40vw;
@@ -154,7 +154,7 @@ footer ul li {
         margin: 100px 0px;
         text-align: center;
     }
-    
+
     .i3 img{
         height:40vw;
         width:40vw;
@@ -169,7 +169,7 @@ footer ul li {
         margin: 100px 0px;
         text-align: center;
     }
-    
+
     .i4 img{
         height:40vw;
         width:40vw;
@@ -184,13 +184,13 @@ footer ul li {
         margin: 100px 0px 250px 0px;
         text-align: center;
     }
-    
+
     .ip {
         height:40vw;
         width:40vw;
         border: solid black 1px;
         border-radius: 7px;
-    
+
         color:var(--theme-color);
         font-weight: lighter;
         letter-spacing:1.2px;
@@ -200,7 +200,7 @@ footer ul li {
         justify-content: center;
         background-image:linear-gradient(var(--primary-color),var(--secondary-color))
     }
-    
+
     .ip img{
         max-width:60px;
         max-height: 60px;
@@ -208,11 +208,11 @@ footer ul li {
         width:8vw;
         border-radius: 7px;
     }
-    
+
     .ip h2{
         padding-top:4vw;
     }
-    
+
     .ip p{
         padding-top:3vw;
     }
@@ -243,7 +243,7 @@ footer ul li {
         padding: 25px 0;
         text-align: center;
     }
-    
+
     .i2 img{
         height:35vw;
         width:35vw;
@@ -266,7 +266,7 @@ footer ul li {
         padding: 25px 0;
         text-align: center;
     }
-    
+
     .i3 img{
         height:35vw;
         width:35vw;
@@ -289,7 +289,7 @@ footer ul li {
         padding: 25px 0;
         text-align: center;
     }
-    
+
     .i4 img{
         height:35vw;
         width:35vw;
@@ -312,14 +312,14 @@ footer ul li {
         text-align: center;
         padding: 25px 0;
     }
-    
+
     .ip {
         max-width: 560px;
         height:35vw;
         width:187.6vw;
         border: solid black 1px;
         border-radius: 7px;
-    
+
         color:var(--theme-color);
         font-weight: lighter;
         letter-spacing:1.2px;
@@ -329,17 +329,17 @@ footer ul li {
         justify-content: center;
         background-image:linear-gradient(var(--primary-color),var(--secondary-color))
     }
-    
+
     .ip img{
         height:8vw;
         width:8vw;
         border-radius: 7px;
     }
-    
+
     .ip h2{
         padding-top:4vw;
     }
-    
+
     .ip p{
         padding-top:3vw;
     }
