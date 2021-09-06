@@ -36,7 +36,7 @@ const model = {
         return resultado;
     }, */
     one: function(id){
-        return this.all().find(element => element.id == id);
+        return this.all().find(element => element.id == id); //esto puede hacer error, reemplazar con ===
     },
     new: function (data,file) {
         const directory = path.resolve(__dirname,"../data","products.json")
@@ -68,7 +68,7 @@ const model = {
             const directory = path.resolve(__dirname,"../data","products.json");
             let all = this.all();
             let deleted = this.one(id);
-            all = all.filter(element => element.id != deleted.id )
+            all = all.filter(element => element.id != deleted.id ) //esto puede hacer error, reemplazar con !==
             fs.writeFileSync(directory,JSON.stringify(all,null,2));
         return true;
         
@@ -127,7 +127,7 @@ const model = {
             color: data.color, */
         })
         all = all.map(element => {
-            if(element.id == id){
+            if(element.id == id){ //esto puede hacer error, reemplazar con ===
                 element.name = data.name,
                 element.description = data.description,
                 element.price = data.price,

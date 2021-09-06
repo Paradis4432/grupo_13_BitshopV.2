@@ -9,6 +9,7 @@ router.get("/register", user.register);
 
 module.exports = router;
 
+//porque esta esto aca? eliminar si no hace falta
 /* ----------------------------------------------------------
 
 const express = require("express");

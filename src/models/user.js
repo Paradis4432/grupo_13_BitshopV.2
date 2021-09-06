@@ -11,10 +11,10 @@ module.exports = {
         return JSON.parse(fs.readFileSync(this.dir))
     },
     one: function (id) {
-        return this.all().find(user => user.id == id)
+        return this.all().find(user => user.id == id) //esto puede hacer error, reemplazar con ===
     },
     findByEmail: function(email){
-        return this.all().find(user => user.email == email)
+        return this.all().find(user => user.email == email) //esto puede hacer error, reemplazar con ===
     },
     create: function (data, file){
 
