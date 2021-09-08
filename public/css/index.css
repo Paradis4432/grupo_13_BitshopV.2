@@ -207,7 +207,7 @@ footer {
     padding: 20px;
 
     /* Flex */
-    
+
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -243,7 +243,7 @@ footer .menu  {
     list-style: none;
     border-top: solid 1px;
     border-top-color: #ece5ba;
-    padding-bottom: 12px; 
+    padding-bottom: 12px;
 }
 
 footer .social {
@@ -257,46 +257,46 @@ footer .social {
         background: #e54f28;
         width: 100%;
         padding: 20px;
-    
+
         /* Flex */
-        
+
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-between;
     }
-    
+
     footer ul li {
         list-style: none;
         padding-bottom: 12px;
     }
-    
+
     footer ul li a{
         color: #2e1a1a;
         text-decoration: none;
         padding: 7px;
         text-align:left;
     }
-    
+
     footer .social ul li{
         border-right:none;
         padding-right:0px;
     }
-    
+
     footer .links {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
     }
-    
+
     footer .menu {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
     }
-    
+
     footer .menu ul li {
         border-right: solid 1px;
         border-right-color: #ece5ba;
@@ -304,7 +304,7 @@ footer .social {
         list-style: none;
         border-left: solid 1px;
         border-left-color: #ece5ba;
-        padding-left: 250px; 
+        padding-left: 250px;
         padding-top:0px;
         padding-bottom:0px;
         border-bottom: none;
@@ -312,7 +312,7 @@ footer .social {
         border-top-color:none;
         border-bottom-color: none;
     }
-    
+
     footer .social {
         display: flex;
         flex-wrap: wrap;
@@ -335,7 +335,7 @@ footer .social {
         margin: 100px 0px;
         text-align: center;
     }
-    
+
     .i2 img{
         height:50vw;
         width:50vw;
@@ -349,7 +349,7 @@ footer .social {
         margin: 100px 0px;
         text-align: center;
     }
-    
+
     .i3 img{
         height:50vw;
         width:50vw;
@@ -363,7 +363,7 @@ footer .social {
         margin: 100px 0px;
         text-align: center;
     }
-    
+
     .i4 img{
         height:50vw;
         width:50vw;
@@ -377,13 +377,13 @@ footer .social {
         margin: 100px 0px;
         text-align: center;
     }
-    
+
     .ip {
         height:50vw;
         width:50vw;
         border: solid black 1px;
         border-radius: 7px;
-    
+
         color:var(--theme-color);
         font-weight: lighter;
         letter-spacing:1.2px;
@@ -393,17 +393,17 @@ footer .social {
         justify-content: center;
         background-image:linear-gradient(var(--primary-color),var(--secondary-color))
     }
-    
+
     .ip img{
         height:10.5vw;
         width:10.5vw;
         border-radius: 7px;
     }
-    
+
     .ip h2{
         padding-top:4vw;
     }
-    
+
     .ip p{
         padding-top:3vw;
     }
@@ -430,7 +430,7 @@ footer .social {
         margin: 150px 10px;
         text-align: center;
     }
-    
+
     .i2 img{
         height:37vw;
         width:37vw;
@@ -452,7 +452,7 @@ footer .social {
         margin: 150px 10px;
         text-align: center;
     }
-    
+
     .i3 img{
         height:37vw;
         width:37vw;
@@ -474,7 +474,7 @@ footer .social {
         margin: 150px 10px;
         text-align: center;
     }
-    
+
     .i4 img{
         height:37vw;
         width:37vw;
@@ -496,13 +496,13 @@ footer .social {
         margin: 150px 10px;
         text-align: center;
     }
-    
+
     .ip {
         height:37vw;
         width:70vw;
         border: solid black 1px;
         border-radius: 7px;
-    
+
         color:var(--theme-color);
         font-weight: lighter;
         letter-spacing:1.2px;
@@ -512,17 +512,17 @@ footer .social {
         justify-content: center;
         background-image:linear-gradient(var(--primary-color),var(--secondary-color))
     }
-    
+
     .ip img{
         height:10.5vw;
         width:10.5vw;
         border-radius: 7px;
     }
-    
+
     .ip h2{
         padding-top:4vw;
     }
-    
+
     .ip p{
         padding-top:3vw;
     }

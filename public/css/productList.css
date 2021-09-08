@@ -1,10 +1,8 @@
-
-
 .section-main {
     width: 100%;
     margin: auto;
     background-color: #ebebeb;
-    padding-top: 0px;
+    padding-top: 0;
 }
 
 .section-main article {
@@ -13,11 +11,11 @@
     box-shadow: none;
     /* transition: box-shadow 0,5s; */
     transition: all 500ms;
-    
+
 }
 
 .section-main article:hover {
-    box-shadow: 0px 0px 10px rgb(100, 100,100);
+    box-shadow: 0 0 10px rgb(100, 100, 100);
 }
 
 .section-main article img {
@@ -25,9 +23,9 @@
     width: 90%;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 0px;
+    margin-bottom: 0;
 }
-  
+
 
 .article-div {
     background-color: white;
@@ -38,8 +36,6 @@
     position: relative;
     display: flex;
     flex-wrap: wrap;
-    
-
 }
 
 .titulo {
@@ -49,69 +45,52 @@
 
 .precio {
     font-size: 18px;
-    padding: 0%;
+    padding: 0;
     margin: 5px;
     width: 30%;
 }
 
-
 .descripcion {
     font-size: 16px;
-    padding: 0%;
+    padding: 0;
     margin-top: 10px;
     margin-bottom: 10px;
     display: none;
     /* visibility: hidden; */
-       
 }
-
 
 .boton {
     display: none;
     margin: 10px;
 }
 
-
-
 @media (min-width: 361px) {
-    /* .header-div {
-        display: flex;
-        justify-content: space-around;
-        align-items: flex-end;
-    } */
-
-    /* .header-div {
-        
-        flex-wrap: nowrap;
-        
-    } */
-
     #logo {
-        width: 30%;     
+        width: 30%;
     }
 
     .barra-busqueda {
         width: 30%;
-        
     }
-    
+
     .site {
         display: flex;
         justify-content: space-around;
     }
-    
+
     .login {
         display: flex;
         justify-content: space-around;
     }
+
     .burger-menu {
         display: none;
     }
-    
+
     .section-main {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-around;    
+        justify-content: space-around;
     }
 
     .section-main article {
@@ -121,27 +100,15 @@
     }
 
     .section-main article:hover .descripcion {
-
-            
-            display: inline;
-            
-            /* visibility: visible; */
-            
-            
-        
+        display: inline;
+        /* visibility: visible; */
     }
 
     .section-main article:hover .boton {
-
-            
         display: inline;
-        
         /* visibility: visible; */
-        
-        
-    
-}
-    
+    }
+
     section h1 {
         /* display: block; */
         width: 100%;
@@ -150,7 +117,6 @@
 
 @media (min-width: 1200px) {
     .section-main article {
-        
         width: 20vw;
     }
 }

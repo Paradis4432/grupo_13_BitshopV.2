@@ -6,19 +6,26 @@ const product = require("../controllers/product");
 
 
 var storage = multer.diskStorage({
-  destination: function (req, file, cb) {
-    /* cb(null, path.extname(file.originalname).indexOf("jpg") != -1 ? path.resolve(__dirname, "../../public/uploads", "products") : path.resolve(__dirname, "../../public/uploads", "users") ) */
-    cb(null, path.join(__dirname, '../../public/uploads/products'))
-  },
-  filename: function (req, file, cb) {
-    cb(null, Date.now() + '-' + path.extname(file.originalname))
-    /* cb(null,`${Date.now()}_img_${path.extname(file.originalname)}`) */
-  }
+    destination: function (req, file, cb) {
+        /* cb(null, path.extname(file.originalname).indexOf("jpg") != -1 ? path.resolve(__dirname, "../../public/uploads", "products") : path.resolve(__dirname, "../../public/uploads", "users") ) */
+        cb(null, path.join(__dirname, '../../public/uploads/products'))
+        //reemplazar con /public/uploads/products ?
+
+    },
+    filename: function (req, file, cb) {
+        cb(null, Date.now() + '-' + path.extname(file.originalname))
+        /* cb(null,`${Date.now()}_img_${path.extname(file.originalname)}`) */
+    }
 })
+
+//------------ DOCUMENTACION DE cb, destination,filename, {storage:storage} etc
+//https://www.npmjs.com/package/multer
+
+
 
 const upload = multer({storage: storage});
 
-router.get("/", product.list);      
+router.get("/", product.list);
 router.get("/create", product.create);
 router.get("/cart", product.cart);
 router.get("/:id", product.detail);
@@ -36,5 +43,4 @@ module.exports = router;
 
 
 
-   
-  
+

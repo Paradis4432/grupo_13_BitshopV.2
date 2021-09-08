@@ -1,14 +1,15 @@
-<!DOCTYPE html>
-<html leng="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Login</title>
+    <link rel="stylesheet" href="/css/variables.css">
+    <link rel="stylesheet" href="/css/login.css">
 
 </head>
 <body>
-
 <main>
     <label for="userInput">UserName </label><input type="text" id="userInput">
     <label for="passInput">Contraseña </label><input type="password" id="passInput">
@@ -17,15 +18,5 @@
 
     <p id="info"></p>
 </main>
-
 </body>
 </html>
-
-<script>
-    //use p id="info" to display if pass & user in database
-    function checkUser() {
-        //check if user in sql database
-        //if true redirect to main page add "logged=true" in localstorage
-        //if false send message "usuario o contraseña incorrecta"
-    }
-</script>

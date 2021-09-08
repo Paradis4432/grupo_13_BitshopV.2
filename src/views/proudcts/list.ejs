@@ -16,18 +16,11 @@
     <link rel="stylesheet" href="css/<%= style %>">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/header.css">
-     
+    <link rel="stylesheet" href="/css/variables.css">
 </head>
-
-
 <body>
-    
     <%- include("../partials/header") %>
-
-    
     <section class="section-main">
-        
-
             <% product.forEach(product => { %>
             <article>
                 <!-- <% if (product.image) { %>
@@ -49,7 +42,6 @@
                         <button type="submit">Agregar al carrito</button>
                     </form>
                 </div>    
-
                 <!-- <section>
                     <h2><%= product.name %></h2>
                     <a href="/product/<%= product.id %>">show more</a>
@@ -58,10 +50,6 @@
             <% }) %>
 
     </section>
-    
-
-
     <%- include("../partials/footer") %>
-    
 </body>
 </html>

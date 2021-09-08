@@ -1,13 +1,7 @@
-* {
-    box-sizing: border-box;
-    
-}
-
 body {
     /* background-color: #ECE5BA; */
     background-color: rgb(247, 243, 233);
     font-family: 'Raleway', sans-serif;
-
 }
 
 .titulo {
@@ -21,31 +15,17 @@ body {
     padding: 30px;
     font-weight: 600;
     font-size: 20px;
-    
-    
-    
 }
 
 .seccion-carrito {
     margin: 10px;
     position: relative;
-    
-    
-    
 }
 
 .carrito-titulos {
     background-color: rgba(195, 195, 202, 0.89);
     display: none;
-    
 }
-
- 
-
-
-
-
-
 
 .carrito-producto {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -56,13 +36,11 @@ body {
     align-items: center;
     background-color: rgba(195, 195, 202, 0.29);
     text-align: center;
-    
 }
 
 .carrito-producto .contenido {
     width: 45%;
     margin: 5px;
-
 }
 
 input.contenido {
@@ -71,11 +49,10 @@ input.contenido {
 }
 
 .carrito-producto img {
-   
-   padding: 20px;
-   max-width: 200px;
-   max-height: 200px;
-   
+
+    padding: 20px;
+    max-width: 200px;
+    max-height: 200px;
 }
 
 #descripcion-producto {
@@ -87,7 +64,6 @@ input.contenido {
     right: 2px;
     top: 2px;
     font-size: 1rem;
-    
 }
 
 .boton {
@@ -96,15 +72,7 @@ input.contenido {
     margin: 6px;
     border-radius: 5px;
     color: cornsilk;
-    
-    
 }
-
-
-
-
-
-
 
 .seccion-actualizar {
     display: flex;
@@ -122,21 +90,17 @@ input.contenido {
     display: flex;
     flex-wrap: wrap;
     margin-top: 20px;
-    
-
 }
 
 .seccion-totaldelcarrito .total {
     width: 100%;
     margin: 5px;
-    
 }
 
 .seccion-totaldelcarrito .precio {
     /* display: none; */
     width: 100%;
     margin: 5px;
-    
 }
 
 .seccion-totaldelcarrito button {
@@ -145,35 +109,29 @@ input.contenido {
     margin: auto;
 }
 
-
-
-
-
-
-@media (min-width:680px) {
+@media (min-width: 680px) {
     .carrito-producto .contenido {
         width: 20%;
-        
-    
     }
+
     .seccion-carrito {
         /* border: solid 2px tomato; */
         max-width: 1000px;
         margin: auto;
         margin-top: 20px;
     }
+
     .seccion-totaldelcarrito .total {
         width: 10%;
         margin: 5px;
-        
     }
-    
+
     .seccion-totaldelcarrito .precio {
         width: 85%;
         margin: 5px;
-        
+
     }
-    
+
     .seccion-totaldelcarrito button {
         width: 20%;
         cursor: pointer;

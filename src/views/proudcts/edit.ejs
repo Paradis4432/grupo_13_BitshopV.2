@@ -9,14 +9,13 @@
     <link rel="stylesheet" href="/css/navigation.css">
     <link rel="stylesheet" href="/css/header.css">
     <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/variables.css">
+
     <link rel="stylesheet" href="/css/<%= style %>">
 </head>
 <body>
-    <%- include ("../partials/header") %>
-
+    <%- include("../partials/header") %>
     <form action="/product/update/<%= product.id %>?_method=PUT>" method="POST" >
-
-        
         <fieldset>
             <label for="name">Titulo</label>
             <input type="text" name="name" id="name" value="<%= product.name %>" required>
@@ -51,9 +50,7 @@
         <fieldset>
             <button type="submit">Enviar</button>
         </fieldset>
-
     </form>
-        
         <form action="/product/<%= product.id %>?_method=DELETE" method="POST">
             <!-- <input type="hidden" name="id" value="<%= product.id %>"> -->
             <button type="submit" >
@@ -63,7 +60,7 @@
         </form>
         
 
-    <%- include ("../partials/footer") %>
+    <%- include("../partials/footer") %>
     
 </body>
 </html>

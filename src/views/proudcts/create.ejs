@@ -9,14 +9,12 @@
     <link rel="stylesheet" href="/css/navigation.css">
     <link rel="stylesheet" href="/css/header.css">
     <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/variables.css">
     <link rel="stylesheet" href="/css/<%= style %>">
 </head>
 <body>
-    <%- include ("../partials/header") %>
-
+    <%- include("../partials/header") %>
     <form action="/product/save" method="POST" enctype="multipart/form-data">
-
-        
         <fieldset>
             <label for="name">Titulo</label>
             <input type="text" name="name" id="name" required>
@@ -36,12 +34,10 @@
             <label for="category">Categoria</label>
             <input type="number" name="category" id="category" required>
         </fieldset>
-
         <!-- <fieldset>
             <label for="brand">Marca</label>
             <input type="text" name="brand" id="brand" required>
         </fieldset> -->
-        
         <fieldset>
             <label for="image">Imagen</label>
             <input type="file" name="image" id="image" >
@@ -51,8 +47,6 @@
             <button type="submit">Enviar</button>
         </fieldset>
     </form>
-
-    <%- include ("../partials/footer") %>
-    
+    <%- include("../partials/footer") %>
 </body>
 </html>

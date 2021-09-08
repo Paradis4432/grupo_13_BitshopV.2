@@ -1,98 +1,222 @@
-
 <!DOCTYPE html>
 
 <html lang='en'>
 
 <head>
-	<meta charset='UTF-8'>
-	<meta http-equiv='X-UA-Compatible' content='IE=edge'>
-	<meta name='viewport' content='width=device-width, initial-scale=1.0'>
-	<title> <%= title %> </title>
-	<link rel='stylesheet' type ='text/css' href='css/home.css'>
-	<link rel="stylesheet" type ='text/css' href="css/footer.css">
-	<link rel="stylesheet" type ='text/css' href="css/header.css">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-	<link href="https://fonts.googleapis.com/css2?family=Odibee+Sans&display=swap" rel="stylesheet">
+    <meta charset='UTF-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>
+        BitShop
+    </title>
+    <link rel='stylesheet' type='text/css' href='/css/home.css'>
+    <link rel='stylesheet' type='text/css' href='/css/variables.css'>
+    <link rel='stylesheet' type='text/css' href='/css/header.css'>
+    <link rel='stylesheet' type='text/css' href='/css/footer.css'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+          rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Odibee+Sans&display=swap" rel="stylesheet">
 </head>
 
 <body>
-
+<%- include('partials/header.ejs') %>
 <div class="contenedor">
-
-	<%- include("./partials/header") %>
-	<section class="menu">
-		<div class="i1">
-			<a href="/product"><img src="images/PC Components.png" alt=""></a>
-			<div class="ip">
-				<img src="images/Chip.png" alt="">
-				<h2>Componentes</h2>
-				<!-- <p>Comprá componentes o te mato</p> -->
-			</div>
-		</div>
-		<div class="i2">
-			<a href="/product/id"><img src="images/PC Keyboard.png" alt=""></a>
-			<div class="ip">
-				<img src="images/Teclado.png" alt="">
-				<h2>Periféricos</h2>
-				<p>Comprá periféricos plox</p>
-			</div>
-		</div>
-		<div class="i3">
-			<a href="/product/cart"><img src="images/Gatok.png" alt=""></a>
-			<div class="ip">
-				<img src="images/Carrito.png" alt="">
-				<h2>Carritok</h2>
-				<p>Mira tu carrito y al gatito haciendo ok</p>
-			</div>
-		</div>
-		<div class="i4">
-			<a href="#"><img src="images/Inés.png" alt=""></a>
-			<div class="ip">
-				<img src="images/PC.png" alt="">
-				<h2>PC Custom</h2>
-				<p>Ponele fritas a tu PC por 25 pesos extra</p>
-			</div>
-		</div>
-	</section>
-
-
-
-	</aside>
-
-	<%- include("./partials/footer") %>
-
-	<!-- <footer>
-
-
-        <div class="links">
-            <ul>
-                <li><a href="#">Acerca de Nosotros</a></li>
-                <li><a href="#">Términos de Uso</a></li>
-                <li><a href="#">Políticas de Privacidad</a></li>
-            </ul>
+    <main>
+        <div class="main">
+            <div class="meh"></div>
+            <div class="titular titular1">
+                <h2>PCs Armadas Destacadas</h2>
+            </div>
+            <section>
+                <article>
+                    <div>
+                        <figure>
+                            <img src="/images/PC Gamer.png" alt="">
+                        </figure>
+                        <div class="down">
+                            <div class="nombre">
+                                <p class="nom">Millenium</p>
+                            </div>
+                            <div class="descripcion">
+                                <p class="desc">Esto es una descripción</p>
+                            </div>
+                            <div class="precio-total">
+                                <p class="precio">Precio: $$$$</p>
+                            </div>
+                            <button class="button" type="button">Agregar al Carrito</button>
+                        </div>
+                    </div>
+                </article>
+                <article>
+                    <div>
+                        <figure>
+                            <img src="/images/PC Music.png" alt="">
+                        </figure>
+                        <div class="down">
+                            <div class="nombre">
+                                <p class="nom">HP Pavilion 690</p>
+                            </div>
+                            <div class="descripcion">
+                                <p class="desc">Esto es una descripción</p>
+                            </div>
+                            <div class="precio-total">
+                                <p class="precio">$180.000</p>
+                            </div>
+                            <button class="button" type="button">Agregar al Carrito</button>
+                        </div>
+                    </div>
+                </article>
+                <article>
+                    <div>
+                        <figure>
+                            <img src="/images/Gatok.png" alt="">
+                        </figure>
+                        <div class="down">
+                            <div class="nombre">
+                                <p class="nom">PC Armada de Edición</p>
+                            </div>
+                            <div class="descripcion">
+                                <p class="desc">Esto es una descripción</p>
+                            </div>
+                            <div class="precio-total">
+                                <p class="precio">$140.000</p>
+                            </div>
+                            <button class="button" type="button">Agregar al Carrito</button>
+                        </div>
+                    </div>
+                </article>
+            </section>
+            <div class="titular">
+                <h2>Componentes Destacados</h2>
+            </div>
+            <section class="componentes">
+                <article>
+                    <div>
+                        <figure>
+                            <img src="/images/Gatok.png" alt="">
+                        </figure>
+                        <div class="down">
+                            <div class="nombre">
+                                <p class="nom">SAPPHIRE Radeon RX 6900 XT</p>
+                            </div>
+                            <div class="descripcion">
+                                <p class="desc">Esto es una descripción</p>
+                            </div>
+                            <div class="precio-total">
+                                <p class="precio">$183.000</p>
+                            </div>
+                            <button class="button" type="button">Agregar al Carrito</button>
+                        </div>
+                    </div>
+                </article>
+                <article>
+                    <div>
+                        <figure>
+                            <img src="/images/Gatok.png" alt="">
+                        </figure>
+                        <div class="down">
+                            <div class="nombre">
+                                <p class="nom">AMD Ryzen 9 5950X</p>
+                            </div>
+                            <div class="descripcion">
+                                <p class="desc">Esto es una descripción</p>
+                            </div>
+                            <div class="precio-total">
+                                <p class="precio">$146.217</p>
+                            </div>
+                            <button class="button" type="button">Agregar al Carrito</button>
+                        </div>
+                    </div>
+                </article>
+                <article>
+                    <div>
+                        <figure>
+                            <img src="/images/Gatok.png" alt="">
+                        </figure>
+                        <div class="down">
+                            <div class="nombre">
+                                <p class="nom">Asus Prime TRX40-PRO</p>
+                            </div>
+                            <div class="descripcion">
+                                <p class="desc">Esto es una descripción</p>
+                            </div>
+                            <div class="precio-total">
+                                <p class="precio">$75.396</p>
+                            </div>
+                            <button class="button" type="button">Agregar al Carrito</button>
+                        </div>
+                    </div>
+                </article>
+            </section>
+            <div class="titular">
+                <h2>Periféricos Destacados</h2>
+            </div>
+            <section class="perifericos">
+                <article>
+                    <div>
+                        <figure>
+                            <img src="/images/Gatok.png" alt="">
+                        </figure>
+                        <div class="down">
+                            <div class="nombre">
+                                <p class="nom">K100 RGB</p>
+                            </div>
+                            <div class="descripcion">
+                                <p class="desc">Esto es una descripción</p>
+                            </div>
+                            <div class="precio-total">
+                                <p class="precio">$41.907</p>
+                            </div>
+                            <button class="button" type="button">Agregar al Carrito</button>
+                        </div>
+                    </div>
+                </article>
+                <article>
+                    <div>
+                        <figure>
+                            <img src="/images/Gatok.png" alt="">
+                        </figure>
+                        <div class="down">
+                            <div class="nombre">
+                                <p class="nom">IRONCLAW RGB WIRELESS</p>
+                            </div>
+                            <div class="descripcion">
+                                <p class="desc">Esto es una descripción</p>
+                            </div>
+                            <div class="precio-total">
+                                <p class="precio">$14.638</p>
+                            </div>
+                            <button class="button" type="button">Agregar al Carrito</button>
+                        </div>
+                    </div>
+                </article>
+                <article>
+                    <div>
+                        <figure>
+                            <img src="/images/Gatok.png" alt="">
+                        </figure>
+                        <div class="down">
+                            <div class="nombre">
+                                <p class="nom">VIRTUOSO RGB Wireless</p>
+                            </div>
+                            <div class="descripcion">
+                                <p class="desc">Esto es una descripción</p>
+                            </div>
+                            <div class="precio-total">
+                                <p class="precio">$32.940</p>
+                            </div>
+                            <button class="button" type="button">Agregar al Carrito</button>
+                        </div>
+                    </div>
+                </article>
+            </section>
         </div>
+    </main>
 
-        <div class="menu">
-            <ul>
-                <li><a href="#">Componentes</a></li>
-                <li><a href="#">Periféricos</a></li>
-                <li><a href="#">PC Custom</a></li>
-                <li><a href="#">Carrito</a></li>
-            </ul>
-        </div>
-
-        <div class="social">
-            <ul>
-                <li><a href="#">Facebook</a></li>
-                <li><a href="#">Twitter</a></li>
-                <li><a href="#">Instagram</a></li>
-            </ul>
-        </div>
-    </footer> -->
 </div>
-
+<%- include('partials/footer.ejs') %>
 
 </body>
 
