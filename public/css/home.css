@@ -13,12 +13,13 @@ main{
     width:90%;
     margin-left:auto;
     margin-right:auto;
+    padding-bottom:100px;
 }
 
 .main section article{
     margin-left:auto;
     margin-right:auto;
-    margin-bottom:20px;
+    margin-bottom:10px;
     background:linear-gradient(135deg, var(--primary-color) 47%, var(--primary-color), var(--text-color-op2) 47%, #1d2020 67%);
     border-radius:20px;
     box-shadow:0 0 15px rgb(19, 18, 18);
@@ -26,11 +27,29 @@ main{
     width:300px;
 }
 
+.main section article:first-child{
+    margin-top:10px;
+}
+
+.main section:last-child{
+    padding-bottom:0;
+    margin-bottom:0;
+}
+
 .main section article div figure img{
     position:relative;
     left:20%;
     height:250px;
     width:180px;
+}
+
+.main section{
+    background-color: var(--text-color-op1);
+    display:flex;
+    flex-direction: column;
+    border-radius:2.5px;
+    box-shadow:0 0 15px rgb(19, 18, 18);
+    margin-bottom:20px;
 }
 
 .titular{
@@ -125,12 +144,13 @@ main{
     }
 
     .main section{
-        display:flex;
+        flex-direction:row;
     }
 
     .main section article{
         margin-left:auto;
         margin-right:auto;
+        margin-top:10px;
         background:linear-gradient(135deg, var(--primary-color) 47%, var(--primary-color), var(--text-color-op2) 47%, #1d2020 67%);
         border-radius:20px;
         box-shadow:0 0 15px rgb(19, 18, 18);

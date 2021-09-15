@@ -4,9 +4,10 @@ const colorModel = require('./color.js');
 const brandModel = require('./brand.js');
 
 const model = {
-    directory: path.resolve(__dirname, "../data", "products.json"),
-    //porque "../data","products.json" y no "../data/procuts.json si el nombre del json no es una variable ?
+    
     all: function () {
+        const directory = path.resolve(__dirname, "../data", "products.json");
+        //porque "../data","products.json" y no "../data/procuts.json si el nombre del json no es una variable ?
         const file = fs.readFileSync(this.directory);
         return JSON.parse(file);
     },
